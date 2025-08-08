@@ -20,15 +20,19 @@ using namespace std;
 //      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 //  };
 
-// 计算模式串的部分匹配表（next数组）
+
 
 
 // 示例测试
 int main() {
     system("chcp 65001"); 
-    string s;
-    cin >> s; 
-    cout << "输入的字符串是: " << s << endl;
+    vector<int> nums = {1, 2, 3, 4, 5};
+    int target = 3;
+    auto it = find(nums.begin(), nums.end(), target);
+    if (it != nums.end()) {
+        cout << "Found " << target << " at index " << distance(nums.begin(), it) << endl;
+    }
+
 
 }
 
