@@ -28,20 +28,7 @@ int main() {
     system("chcp 65001"); 
     string s;
     cin >> s; 
+    cout << "输入的字符串是: " << s << endl;
 
-    // 去掉前导零
-    while (s.size() > 1 && s[0] == '0') s.erase(s.begin());
-
-    int count = s.size() - 1; // 指数
-    double c = stod(s.substr(0, 3)) / 100.0; // 前两位数字形成系数
-    c = round(c * 10) / 10.0; // 保留 1 位小数，四舍五入
-        if(c == 10.0) {
-            c = 1.0;
-            count++;
-        }
-
-
-    cout << fixed << setprecision(1);
-    cout << c << "*10^" << count << endl;
 }
 
