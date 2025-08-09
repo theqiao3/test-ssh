@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 data = np.array([2023, 10, 1])
 plt.figure(figsize=(10, 5))
 plt.plot(data, marker='o', linestyle='-', color='b')
@@ -10,4 +11,12 @@ plt.xlabel('Index')
 plt.ylabel('Value')
 plt.grid(True)
 plt.show()
+
+
+
+# 示例测试
+a = np.array([1, 2, 3, 4, 5])
+b = np.array([5, 4, 3, 2, 1])
+c = a + b
+print("a + b =", c)
 
