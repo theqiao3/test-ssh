@@ -21,9 +21,6 @@ using namespace std;
 //  };
 
 
-
-
-// 示例测试
 int main() {
     system("chcp 65001"); 
     vector<int> nums = {1, 2, 3, 4, 5};
